@@ -1,0 +1,10 @@
+{
+    "market@qq.com": {
+        "Occurrence": 2,
+        "EmailType": "Non-Human"
+    },
+    "jeff.peterson@b2bsearch.com": {
+        "Occurrence": 1,
+        "EmailType": "Human"
+    }
+}
