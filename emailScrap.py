@@ -9,7 +9,7 @@ non_human_email_count = 0
 for line in file:
     words = line.split(' ')
     for word in words:
-        human_mail = re.findall(r"[a-z]+\.+[a-z]+@[\w.]+[a-z]{2,3}", word)
+        human_mail = re.findall(r"[a-z]+\.+[a-z0-9]+@[\w.]+[a-z]{2,3}", word)
         non_human_mail = re.findall(r"^[\w]{2,8}@[\w.]+[a-z]{2,3}", word)
         if human_mail:
             human_email_count += 1
