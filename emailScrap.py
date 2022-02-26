@@ -18,6 +18,6 @@ for line in file:
         if non_human_mail:
             non_human_email_count += 1
             d[non_human_mail[0]] = {'Occurrence': non_human_email_count, 'EmailType': 'Non-Human'}
-print(d)
-# with open('result.json', 'w', encoding='utf-8') as f:
-#     json.dump(d, f, ensure_ascii=False, indent=4)
+
+with open('result.json', 'w', encoding='utf-8') as f:
+    json.dump(d, f, ensure_ascii=False, indent=4)
